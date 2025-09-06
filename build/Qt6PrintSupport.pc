@@ -1,0 +1,12 @@
+prefix=C:/Users/spapi/.conan2/p/qt587937845c546/p
+libdir=${prefix}/lib
+includedir=${prefix}/include
+includedir1=${prefix}/include/QtPrintSupport
+bindir=${prefix}/bin
+
+Name: Qt6PrintSupport
+Description: Conan component: qt6-Qt6PrintSupport
+Version: 6.8.3
+Libs: -L"${libdir}" -lQt6PrintSupport -lgdi32 -luser32 -lcomdlg32 -lwinspool C:\Users\spapi\.conan2\p\qt587937845c546\p\lib\objects-Release\PrintSupport_resources_1\.qt\rcc\qrc_qprintdialog_init.cpp.obj C:\Users\spapi\.conan2\p\qt587937845c546\p\lib\objects-Release\PrintSupport_resources_2\.qt\rcc\qrc_qprintdialog1_init.cpp.obj C:\Users\spapi\.conan2\p\qt587937845c546\p\lib\objects-Release\PrintSupport_resources_1\.qt\rcc\qrc_qprintdialog_init.cpp.obj C:\Users\spapi\.conan2\p\qt587937845c546\p\lib\objects-Release\PrintSupport_resources_2\.qt\rcc\qrc_qprintdialog1_init.cpp.obj
+Cflags: -I"${includedir}" -I"${includedir1}" -DQT_PRINTSUPPORT_LIB
+Requires: Qt6Gui Qt6Widgets Qt6Core

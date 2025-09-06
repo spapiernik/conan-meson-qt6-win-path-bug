@@ -1,0 +1,10 @@
+prefix=C:/Users/spapi/.conan2/p/sqlit7c2041bd853ba/p
+libdir=${prefix}/lib
+includedir=${prefix}/include
+bindir=${prefix}/bin
+
+Name: sqlite3
+Description: Conan component: sqlite3-sqlite3
+Version: 3.50.4
+Libs: -L"${libdir}" -lsqlite3
+Cflags: -I"${includedir}"

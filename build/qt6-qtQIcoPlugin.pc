@@ -1,0 +1,9 @@
+prefix=C:/Users/spapi/.conan2/p/qt587937845c546/p
+libdir=${prefix}/plugins/imageformats
+bindir=${prefix}/bin
+
+Name: qt6-qtQIcoPlugin
+Description: Conan component: qt6-qtQIcoPlugin
+Version: 6.8.3
+Libs: -L"${libdir}" -lqico
+Requires: Qt6Gui Qt6Core

@@ -1,0 +1,11 @@
+prefix=C:/Users/spapi/.conan2/p/opens53b2260921422/p
+libdir=${prefix}/lib
+includedir=${prefix}/include
+bindir=${prefix}/bin
+
+Name: libcrypto
+Description: Conan component: openssl-libcrypto
+Version: 3.5.2
+Libs: -L"${libdir}" -llibcrypto -lcrypt32 -lws2_32 -ladvapi32 -luser32 -lbcrypt
+Cflags: -I"${includedir}"
+Requires: zlib

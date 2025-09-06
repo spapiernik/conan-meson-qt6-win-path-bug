@@ -1,0 +1,10 @@
+prefix=C:/Users/spapi/.conan2/p/qt587937845c546/p
+libdir=${prefix}/lib
+includedir=${prefix}/mkspecs/win32-msvc
+bindir=${prefix}/bin
+
+Name: qt6-qtPlatform
+Description: Conan component: qt6-qtPlatform
+Version: 6.8.3
+Libs: -L"${libdir}"
+Cflags: -I"${includedir}" -permissive- -Zc:__cplusplus

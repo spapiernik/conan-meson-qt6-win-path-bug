@@ -1,0 +1,12 @@
+prefix=C:/Users/spapi/.conan2/p/qt587937845c546/p
+libdir=${prefix}/lib
+includedir=${prefix}/include
+includedir1=${prefix}/include/QtNetwork
+bindir=${prefix}/bin
+
+Name: Qt6Network
+Description: Conan component: qt6-Qt6Network
+Version: 6.8.3
+Libs: -L"${libdir}" -lQt6Network -ladvapi32 -ldnsapi -liphlpapi -lsecur32 -lwinhttp
+Cflags: -I"${includedir}" -I"${includedir1}" -DQT_NETWORK_LIB
+Requires: openssl brotli Qt6Core

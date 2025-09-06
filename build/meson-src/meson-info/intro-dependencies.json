@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Qt6Core",
+    "type": "pkgconfig",
+    "version": "6.8.3",
+    "compile_args": [
+      "-IC:/Users/spapi/.conan2/p/qt587937845c546/p/include",
+      "-IC:/Users/spapi/.conan2/p/qt587937845c546/p/include/QtCore",
+      "-DQT_CORE_LIB",
+      "-DQT_NO_DEBUG",
+      "-IC:/Users/spapi/.conan2/p/qt587937845c546/p/mkspecs/win32-msvc",
+      "-permissive-",
+      "-Zc:__cplusplus",
+      "-IC:/Users/spapi/.conan2/p/pcre2418bd44ff7697/p/include",
+      "-DPCRE2_STATIC",
+      "-IC:/Users/spapi/.conan2/p/bzip2e1752ec0a98ec/p/include",
+      "-IC:/Users/spapi/.conan2/p/doubl397789b873e66/p/include",
+      "-IC:/Users/spapi/.conan2/p/opens53b2260921422/p/include",
+      "-IC:/Users/spapi/.conan2/p/zlib0e715158c1dfd/p/include"
+    ],
+    "link_args": [
+      "-LC:/Users/spapi/.conan2/p/qt587937845c546/p/lib",
+      "-LC:/Users/spapi/.conan2/p/pcre2418bd44ff7697/p/lib",
+      "-LC:/Users/spapi/.conan2/p/bzip2e1752ec0a98ec/p/lib",
+      "-LC:/Users/spapi/.conan2/p/doubl397789b873e66/p/lib",
+      "-LC:/Users/spapi/.conan2/p/opens53b2260921422/p/lib",
+      "-LC:/Users/spapi/.conan2/p/zlib0e715158c1dfd/p/lib",
+      "C:/Users/spapi/.conan2/p/qt587937845c546/p/lib/Qt6Core.lib",
+      "-lsynchronization",
+      "-lruntimeobject",
+      "-lauthz",
+      "-lkernel32",
+      "-lnetapi32",
+      "-lole32",
+      "-lshell32",
+      "-luuid",
+      "-lversion",
+      "-lwinmm",
+      "-lmpr",
+      "-luserenv",
+      "C:/Users/spapi/.conan2/p/pcre2418bd44ff7697/p/lib/pcre2-16-static.lib",
+      "C:/Users/spapi/.conan2/p/pcre2418bd44ff7697/p/lib/pcre2-32-static.lib",
+      "C:/Users/spapi/.conan2/p/pcre2418bd44ff7697/p/lib/pcre2-posix-static.lib",
+      "C:/Users/spapi/.conan2/p/pcre2418bd44ff7697/p/lib/pcre2-8-static.lib",
+      "C:/Users/spapi/.conan2/p/bzip2e1752ec0a98ec/p/lib/bz2.lib",
+      "C:/Users/spapi/.conan2/p/doubl397789b873e66/p/lib/double-conversion.lib",
+      "C:/Users/spapi/.conan2/p/opens53b2260921422/p/lib/libssl.lib",
+      "C:/Users/spapi/.conan2/p/opens53b2260921422/p/lib/libcrypto.lib",
+      "-lcrypt32",
+      "-lws2_32",
+      "-ladvapi32",
+      "-luser32",
+      "-lbcrypt",
+      "C:/Users/spapi/.conan2/p/zlib0e715158c1dfd/p/lib/zlib.lib"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [
+      "Qt6Core",
+      "Qt6Widgets"
+    ],
+    "depends": [],
+    "meson_variables": [
+      "qt6_dep"
+    ]
+  }
+]

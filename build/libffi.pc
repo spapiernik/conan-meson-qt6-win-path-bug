@@ -1,0 +1,10 @@
+prefix=C:/Users/spapi/.conan2/p/libff30e278ad27691/p
+libdir=${prefix}/lib
+includedir=${prefix}/include
+bindir=${prefix}/bin
+
+Name: libffi
+Description: Conan package: libffi
+Version: 3.4.8
+Libs: -L"${libdir}" -llibffi
+Cflags: -I"${includedir}" -DFFI_STATIC_BUILD

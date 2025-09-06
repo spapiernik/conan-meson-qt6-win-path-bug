@@ -1,0 +1,14 @@
+prefix=C:/Users/spapi/.conan2/p/qt587937845c546/p
+libdir=${prefix}/lib
+includedir=${prefix}/include
+includedir1=${prefix}/include/QtCore
+bindir=${prefix}/bin
+libexecdir=${prefix}/libexec
+exec_prefix=${prefix}
+
+Name: Qt6Core
+Description: Conan component: qt6-Qt6Core
+Version: 6.8.3
+Libs: -L"${libdir}" -lQt6Core -lauthz -lsynchronization -lruntimeobject -ladvapi32 -lauthz -lkernel32 -lnetapi32 -lole32 -lshell32 -luser32 -luuid -lversion -lwinmm -lws2_32 -lmpr -luserenv
+Cflags: -I"${includedir}" -I"${includedir1}" -DQT_CORE_LIB -DQT_NO_DEBUG
+Requires: qt6-qtPlatform zlib libpcre2 double-conversion openssl

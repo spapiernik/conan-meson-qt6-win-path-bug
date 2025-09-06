@@ -1,0 +1,5 @@
+[options]
+
+[properties]
+native_file = ['C:\\Workspaces\\cpp\\qt6-app\\build\\conan_meson_native.ini']
+

@@ -1,0 +1,10 @@
+prefix=C:/Users/spapi/.conan2/p/doubl397789b873e66/p
+libdir=${prefix}/lib
+includedir=${prefix}/include
+bindir=${prefix}/bin
+
+Name: double-conversion
+Description: Conan package: double-conversion
+Version: 3.3.0
+Libs: -L"${libdir}" -ldouble-conversion
+Cflags: -I"${includedir}"

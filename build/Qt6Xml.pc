@@ -1,0 +1,12 @@
+prefix=C:/Users/spapi/.conan2/p/qt587937845c546/p
+libdir=${prefix}/lib
+includedir=${prefix}/include
+includedir1=${prefix}/include/QtXml
+bindir=${prefix}/bin
+
+Name: Qt6Xml
+Description: Conan component: qt6-Qt6Xml
+Version: 6.8.3
+Libs: -L"${libdir}" -lQt6Xml
+Cflags: -I"${includedir}" -I"${includedir1}" -DQT_XML_LIB
+Requires: Qt6Core

@@ -1,0 +1,12 @@
+prefix=C:/Users/spapi/.conan2/p/qt587937845c546/p
+libdir=${prefix}/lib
+includedir=${prefix}/include
+includedir1=${prefix}/include/QtConcurrent
+bindir=${prefix}/bin
+
+Name: Qt6Concurrent
+Description: Conan component: qt6-Qt6Concurrent
+Version: 6.8.3
+Libs: -L"${libdir}" -lQt6Concurrent
+Cflags: -I"${includedir}" -I"${includedir1}" -DQT_CONCURRENT_LIB
+Requires: Qt6Core

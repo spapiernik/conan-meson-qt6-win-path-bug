@@ -1,0 +1,10 @@
+prefix=C:/Users/spapi/.conan2/p/libic959babe6e3221/p
+libdir=${prefix}/lib
+includedir=${prefix}/include
+bindir=${prefix}/bin
+
+Name: libiconv
+Description: Conan package: libiconv
+Version: 1.17
+Libs: -L"${libdir}" -liconv -lcharset
+Cflags: -I"${includedir}"

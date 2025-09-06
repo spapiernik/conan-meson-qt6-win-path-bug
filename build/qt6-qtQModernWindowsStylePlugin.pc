@@ -1,0 +1,9 @@
+prefix=C:/Users/spapi/.conan2/p/qt587937845c546/p
+libdir=${prefix}/plugins/styles
+bindir=${prefix}/bin
+
+Name: qt6-qtQModernWindowsStylePlugin
+Description: Conan component: qt6-qtQModernWindowsStylePlugin
+Version: 6.8.3
+Libs: -L"${libdir}" -lqmodernwindowsstyle
+Requires: Qt6Core Qt6Gui

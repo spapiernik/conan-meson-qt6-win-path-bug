@@ -1,0 +1,9 @@
+prefix=C:/Users/spapi/.conan2/p/qt587937845c546/p
+libdir=${prefix}/plugins/sqldrivers
+bindir=${prefix}/bin
+
+Name: qt6-qtQODBCDriverPlugin
+Description: Conan component: qt6-qtQODBCDriverPlugin
+Version: 6.8.3
+Libs: -L"${libdir}" -lqsqlodbc
+Requires: Qt6Core

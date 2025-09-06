@@ -1,0 +1,12 @@
+prefix=C:/Users/spapi/.conan2/p/harfbe18038c4151f2/p
+libdir=${prefix}/lib
+includedir=${prefix}/include
+includedir1=${prefix}/include/harfbuzz
+bindir=${prefix}/bin
+
+Name: harfbuzz
+Description: Conan package: harfbuzz
+Version: 11.4.1
+Libs: -L"${libdir}" -lharfbuzz -luser32 -lgdi32 -lrpcrt4 -lusp10
+Cflags: -I"${includedir}" -I"${includedir1}"
+Requires: freetype2 glib

@@ -1,0 +1,10 @@
+prefix=C:/Users/spapi/.conan2/p/qt587937845c546/p
+libdir=${prefix}/lib
+includedir=${prefix}/include
+bindir=${prefix}/bin
+
+Name: qt6-qtEntryPointImplementation
+Description: Conan component: qt6-qtEntryPointImplementation
+Version: 6.8.3
+Libs: -L"${libdir}" -lQt6EntryPoint -lshell32
+Cflags: -I"${includedir}"

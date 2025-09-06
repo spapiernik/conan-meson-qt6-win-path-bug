@@ -1,0 +1,16 @@
+prefix=C:/Users/spapi/.conan2/p/glib94601b4fa09e1/p
+libdir=${prefix}/lib
+includedir=${prefix}/include
+includedir1=${prefix}/include/glib-2.0
+includedir2=${prefix}/lib/glib-2.0/include
+bindir=${prefix}/bin
+glib_genmarshal=${bindir}/glib-genmarshal
+gobject_query=${bindir}/gobject-query
+glib_mkenums=${bindir}/glib-mkenums
+
+Name: glib-2.0
+Description: Conan component: glib-glib-2.0
+Version: 2.78.3
+Libs: -L"${libdir}" -lglib-2.0 -lws2_32 -lole32 -lshell32 -luser32 -ladvapi32
+Cflags: -I"${includedir}" -I"${includedir1}" -I"${includedir2}"
+Requires: libpcre2 libgettext

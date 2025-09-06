@@ -1,0 +1,10 @@
+prefix=C:/Users/spapi/.conan2/p/brotl06f66710412ab/p
+libdir=${prefix}/lib
+includedir=${prefix}/include
+bindir=${prefix}/bin
+
+Name: libbrotlicommon
+Description: Conan component: brotli-libbrotlicommon
+Version: 1.1.0
+Libs: -L"${libdir}" -lbrotlicommon
+Cflags: -I"${includedir}"

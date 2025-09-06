@@ -1,0 +1,9 @@
+prefix=C:/Users/spapi/.conan2/p/qt587937845c546/p
+libdir=${prefix}/plugins/sqldrivers
+bindir=${prefix}/bin
+
+Name: qt6-qtQPSQLDriverPlugin
+Description: Conan component: qt6-qtQPSQLDriverPlugin
+Version: 6.8.3
+Libs: -L"${libdir}" -lqsqlpsql
+Requires: libpq Qt6Core

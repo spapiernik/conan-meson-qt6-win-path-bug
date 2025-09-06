@@ -1,0 +1,11 @@
+prefix=C:/Users/spapi/.conan2/p/libge38d63f3d9c0c1/p
+libdir=${prefix}/lib
+includedir=${prefix}/include
+bindir=${prefix}/bin
+
+Name: libgettext
+Description: Conan package: libgettext
+Version: 0.22
+Libs: -L"${libdir}" -lgnuintl
+Cflags: -I"${includedir}"
+Requires: libiconv

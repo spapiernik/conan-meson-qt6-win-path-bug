@@ -1,0 +1,11 @@
+prefix=C:/Users/spapi/.conan2/p/md4c668d8d4f42f4f/p
+libdir=${prefix}/lib
+includedir=${prefix}/include
+bindir=${prefix}/bin
+
+Name: md4c-html
+Description: Conan component: md4c-html-md4c-html
+Version: 0.4.8
+Libs: -L"${libdir}" -lmd4c-html
+Cflags: -I"${includedir}"
+Requires: md4c

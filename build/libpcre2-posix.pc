@@ -1,0 +1,11 @@
+prefix=C:/Users/spapi/.conan2/p/pcre2418bd44ff7697/p
+libdir=${prefix}/lib
+includedir=${prefix}/include
+bindir=${prefix}/bin
+
+Name: libpcre2-posix
+Description: Conan component: libpcre2-libpcre2-posix
+Version: 10.42
+Libs: -L"${libdir}" -lpcre2-posix-static
+Cflags: -I"${includedir}"
+Requires: libpcre2-8

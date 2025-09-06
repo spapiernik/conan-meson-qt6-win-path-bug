@@ -1,0 +1,12 @@
+prefix=C:/Users/spapi/.conan2/p/qt587937845c546/p
+libdir=${prefix}/lib
+includedir=${prefix}/include
+includedir1=${prefix}/include/QtOpenGL
+bindir=${prefix}/bin
+
+Name: Qt6OpenGL
+Description: Conan component: qt6-Qt6OpenGL
+Version: 6.8.3
+Libs: -L"${libdir}" -lQt6OpenGL
+Cflags: -I"${includedir}" -I"${includedir1}" -DQT_OPENGL_LIB
+Requires: Qt6Gui Qt6Core

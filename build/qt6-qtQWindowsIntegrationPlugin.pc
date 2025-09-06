@@ -1,0 +1,9 @@
+prefix=C:/Users/spapi/.conan2/p/qt587937845c546/p
+libdir=${prefix}/plugins/platforms
+bindir=${prefix}/bin
+
+Name: qt6-qtQWindowsIntegrationPlugin
+Description: Conan component: qt6-qtQWindowsIntegrationPlugin
+Version: 6.8.3
+Libs: -L"${libdir}" -lqwindows -ladvapi32 -ldwmapi -lgdi32 -limm32 -lole32 -loleaut32 -lsetupapi -lshell32 -lshlwapi -luser32 -lwinmm -lwinspool -lwtsapi32 -lshcore -lcomdlg32 -ld3d9 -lruntimeobject C:\Users\spapi\.conan2\p\qt587937845c546\p\lib\objects-Release\QWindowsIntegrationPlugin_resources_1\.qt\rcc\qrc_openglblacklists_init.cpp.obj C:\Users\spapi\.conan2\p\qt587937845c546\p\lib\objects-Release\QWindowsIntegrationPlugin_resources_2\.qt\rcc\qrc_cursors_init.cpp.obj C:\Users\spapi\.conan2\p\qt587937845c546\p\lib\objects-Release\QWindowsIntegrationPlugin_resources_1\.qt\rcc\qrc_openglblacklists_init.cpp.obj C:\Users\spapi\.conan2\p\qt587937845c546\p\lib\objects-Release\QWindowsIntegrationPlugin_resources_2\.qt\rcc\qrc_cursors_init.cpp.obj
+Requires: Qt6Core Qt6Gui

@@ -1,0 +1,11 @@
+prefix=C:/Users/spapi/.conan2/p/pcre2418bd44ff7697/p
+libdir=${prefix}/lib
+includedir=${prefix}/include
+bindir=${prefix}/bin
+
+Name: libpcre2-8
+Description: Conan component: libpcre2-libpcre2-8
+Version: 10.42
+Libs: -L"${libdir}" -lpcre2-8-static
+Cflags: -I"${includedir}" -DPCRE2_STATIC
+Requires: zlib bzip2

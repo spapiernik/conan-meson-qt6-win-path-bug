@@ -1,0 +1,11 @@
+prefix=C:/Users/spapi/.conan2/p/qt587937845c546/p
+libdir=${prefix}/lib
+includedir=${prefix}/include
+bindir=${prefix}/bin
+
+Name: qt6
+Description: Conan package: qt6
+Version: 6.8.3
+Libs: -L"${libdir}"
+Cflags: -I"${includedir}"
+Requires: qt6-qtPlatform qt6-QODBCDriverPlugin qt6-qtEntryPointImplementation Qt6Core qt6-qtEntryPointPrivate Qt6Gui qt6-qtQSQLiteDriverPlugin qt6-qtQPSQLDriverPlugin qt6-qtQODBCDriverPlugin Qt6Network Qt6Sql Qt6Test Qt6Concurrent Qt6Xml qt6-qtQWindowsIntegrationPlugin qt6-qtQModernWindowsStylePlugin qt6-qtQGifPlugin qt6-qtQIcoPlugin Qt6Widgets Qt6OpenGL Qt6PrintSupport Qt6OpenGLWidgets

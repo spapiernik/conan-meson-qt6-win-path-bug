@@ -1,0 +1,10 @@
+prefix=C:/Users/spapi/.conan2/p/glib94601b4fa09e1/p
+libdir=${prefix}/lib
+includedir=${prefix}/include
+bindir=${prefix}/bin
+
+Name: gresource
+Description: Conan component: glib-gresource
+Version: 2.78.3
+Libs: -L"${libdir}"
+Cflags: -I"${includedir}"
