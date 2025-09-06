@@ -1,6 +1,8 @@
 project(
   'my_qt6_app',
   'cpp',
+  license: 'MIT',
+  license_files: ['LICENSE'],
   default_options: ['default_library=static', 'cpp_std=c++20']
 )
 
