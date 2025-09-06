@@ -1,0 +1,66 @@
+name: Windows Build
+
+on:
+  push:
+    paths-ignore:
+      - "README.md"
+      - "LICENSE"
+    branches:
+      - main
+  pull_request:
+    paths-ignore:
+      - "README.md"
+      - "LICENSE"
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    defaults:
+      run:
+        shell: cmd
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+ 
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
+        with:
+          version: 0.8.15
+
+      - name: Install build tools
+        run: |
+          uv tool install meson
+          uv tool install conan
+          uv tool install ninja
+
+      - name: Configure conan
+        run: |
+          uvx conan profile detect --force
+          uvx conan install . -of build -b missing -s compiler.cppstd=20
+      
+      - name: Install pkg-config
+        run: |
+          choco install -y --stop-on-first-failure --checksum 6004DF17818F5A6DBF19CB335CC92702 pkgconfiglite
+
+      - name: Configure meson
+        run: |
+          for /f "usebackq tokens=*" %%i in (`vswhere -latest -property installationPath`) do call "%%i\VC\Auxiliary\Build\vcvars64.bat"
+          uvx meson setup --native-file build/conan_meson_native.ini build/meson-src --wipe
+
+      - name: Build
+        run: |
+          for /f "usebackq tokens=*" %%i in (`vswhere -latest -property installationPath`) do call "%%i\VC\Auxiliary\Build\vcvars64.bat"
+          uvx meson compile -C build/meson-src
+
+      - name: Upload artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows-build
+          path: build
