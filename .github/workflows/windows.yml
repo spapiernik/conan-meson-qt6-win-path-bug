@@ -43,7 +43,7 @@ jobs:
         run: |
           uvx conan profile detect --force
           uvx conan install . -of build -b missing -s compiler.cppstd=20
-      
+ 
       - name: Install pkg-config
         run: |
           choco install -y --stop-on-first-failure --checksum 6004DF17818F5A6DBF19CB335CC92702 pkgconfiglite
@@ -53,12 +53,12 @@ jobs:
           for /f "usebackq tokens=*" %%i in (`vswhere -latest -property installationPath`) do call "%%i\VC\Auxiliary\Build\vcvars64.bat"
           uvx meson setup --native-file build/conan_meson_native.ini build/meson-src --wipe
 
-      - name: Build
+      - name: Build project with Meson (expected to fail)
         run: |
           for /f "usebackq tokens=*" %%i in (`vswhere -latest -property installationPath`) do call "%%i\VC\Auxiliary\Build\vcvars64.bat"
           uvx meson compile -C build/meson-src
 
-      - name: Upload artifact
+      - name: Upload Windows build artifact (even on failure)
         if: always()
         uses: actions/upload-artifact@v4
         with:
